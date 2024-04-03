@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(189, 205, 251);
+}
+
+.logo {
+    margin-left: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black; 
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Primary Button Styles */
+button {
+    background-color: black;
+    color: white;
+    border-radius: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* Additional styles as needed */
+}
+
+/* Hero Section Styles */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(189, 205, 251);
+}
+
+.hero h1 {
+    grid-column: 3 / span 8;
+    grid-row: 1 / span 2;
+}
+
+.hero h2 {
+    grid-column: 3 / span 6;
+    grid-row: 3 / span 2;
+}
+
+.hero img {
+    grid-column: 2 / span 10;
+    grid-row: span 2;
+    width: 100%;
+}
+
+/* Services Section Styles */
+.services {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    border-bottom: 1px black solid;
+}
+
+.left-column {
+    grid-area: 1 / 1 / span 3 / span 6;
+    padding: 0 20px;
+}
+
+.right-column {
+    grid-area: 1 / 7 / span 3 / span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-right: 20px;
+}
+
+/* Styles for Marketing, Creative, Strategy, and Technology Sections */
+.marketing, .creative, .strategy, .technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.marketing {
+    grid-area: 1 / 1 / span 3 / span 3;
+}
+
+.creative {
+    grid-area: 1 / 4 / span 3 / span 3;
+}
+
+.strategy {
+    grid-area: 4 / 1 / span 3 / span 3;
+}
+
+.technology {
+    grid-area: 4 / 4 / span 3 / span 3;
+}
+
+/* Work Examples Styles */
+.work {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+ 
+   
+}
+
+.clients h3 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Client Feedback Styles */
+.client-feedback-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+ 
+}
+
+.feedback {
+    padding: 20px;
+}
+
+.feedback h2, .feedback h6 {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.clients-feedback {
+    padding: 20px;
+}
+
+.clients-feedback p {
+    margin: 0;
+}
+
+.clients-feedback p:last-child {
+    margin-bottom: 0;
+}
+
+/* About Us Styles */
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-top: 1px black solid;
+}
+
+.about-us img {
+    width: 100%;
+}
+
+.about-us div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h3, .about-us h1, .about-us p, .about-us button {
+    margin: 15px;
+}
+
+.about-us button {
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    background-color: rgb(189, 205, 251);
+    padding: 20px;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .quick-links h2, .footer .contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.footer .quick-links li {
+    margin-bottom: 8px;
+}
+
